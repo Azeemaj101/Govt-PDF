@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0%;
+            padding: 10px;
+        }
+
+        @media print {
+
+            *,
+            body {
+                margin: 0%;
+                padding: 0%;
+            }
+
+            .logo-print {
+                width: 150px;
+            }
+
+            .head-text-1,
+            .S-4-Date {
+                font-size: 12px;
+            }
+
+            .Small-text {
+                font-size: 11px;
+            }
+
+            .Small-text-1 {
+                font-size: 13px;
+            }
+
+            .head-text-2 {
+                font-size: 20px;
+            }
+
+            .S-2-t1 {
+                font-size: 13px;
+            }
+
+            .f-15 {
+                font-size: 15px;
+            }
+
+            .f-13 {
+                font-size: 13px;
+            }
+            .f-12 {
+                font-size: 12px;
+            }
+            .f-11 {
+                font-size: 11px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="flex justify-between">
+        <div class="flex">
+            <img src="./logo.png" class="logo-print" alt="">
+            <p class="ms-5 font-bold head-text-1">Ministry of Transportation</p>
+        </div>
+        <div class="flex items-center justify-center">
+            <div class="font-bold head-text-2">
+                Application for Vehicle Registration
+            </div>
+        </div>
+    </div>
+    <!-- S-2 -->
+    <div class="mt-4">
+        <div class="f-15 font-bold">Instructions</div>
+        <div class="f-13 mt-2">Please print clearly in ink. Provide insurance information in section 7 if applicable.
+            Ensure section 8 is completed and signed.</div>
+    </div>
+    <!-- S-3 -->
+    <div class="bg-[#efefef] f-15 font-bold border-t-2 border-b py-1 border-black mt-4">
+        1. Registrant
+    </div>
+    <form action="">
+        <!-- S-4 -->
+        <div class="grid grid-cols-12 gap-1 border-b  border-black">
+            <div class="col-span-8 flex flex-col border-e border-black">
+                <label for="userInput" class="f-13">Registrant Identification Number (Driver's Licence Number)</label>
+                <input type="text" name="userInput" class="bg-[#f1f4ff] m-1 h-full" title="(Driver's Licence Number)">
+            </div>
+            <div class="col-span-4">
+                <div class="font-bold f-13">New Plate Registrants only</div>
+                <div class="grid grid-cols-12 gap-2">
+                    <div class="col-span-4 flex flex-col border-e border-black">
+                        <label for="userInput" class="f-13">Sex</label>
+                        <input type="text" name="userInput" class="bg-[#f1f4ff] m-1 h-full me-4"
+                            title="(Driver's Licence Number)">
+                    </div>
+                    <div class="col-span-8 flex flex-col">
+                        <label for="userInput" class="f-13">Date of Birth</label>
+                        <input type="date" name="userInput" class="bg-[#f1f4ff] m-1 h-full f-13"
+                            title="(Driver's Licence Number)">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- S-5 -->
+        <div class="flex flex-col border-b border-black">
+            <label for="userInput" class="f-13">Last Name, First Name and Middle Initial or Company Name</label>
+            <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1" title="(Driver's Licence Number)">
+        </div>
+
+        <!-- S-6 -->
+        <div>
+            <div class="font-bold f-13">Complete address section only if new registrant or address changed.</div>
+            <div class="grid grid-cols-12 gap-1">
+                <div class="col-span-8 border-e border-black flex flex-col">
+                    <label for="userInput" class="Small-text">Street Number and Name, P.O. Box Number, R.R. Number or
+                        Lot, Concession and Township</label>
+                    <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1"
+                        title="(Driver's Licence Number)">
+                </div>
+                <div class="col-span-4 flex flex-col">
+                    <label for="userInput" class="f-13">Apartment Number</label>
+                    <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1"
+                        title="(Driver's Licence Number)">
+                </div>
+            </div>
+        </div>
+        <!-- S-7 -->
+        <div class="grid grid-cols-12 gap-1 border-t border-black">
+            <div class="col-span-8 border-e border-black flex flex-col">
+                <label for="userInput" class="f-13">City, Town or Village</label>
+                <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1" title="(Driver's Licence Number)">
+            </div>
+            <div class="col-span-4 flex flex-col">
+                <label for="userInput" class="f-13">Postal Code</label>
+                <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1" title="(Driver's Licence Number)">
+            </div>
+        </div>
+        <!-- S-8 -->
+        <div class="border-t border-black">
+            <div class="f-13"> <span class="font-bold">Mailing Address</span> (Complete below only if mailing address is
+                different from above)</div>
+            <div class="grid grid-cols-12 gap-1">
+                <div class="col-span-8 border-e border-black flex flex-col">
+                    <label for="userInput" class="f-13">Street Number and Name or Lot, Concession and Township</label>
+                    <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1"
+                        title="(Driver's Licence Number)">
+                </div>
+                <div class="col-span-4 flex flex-col">
+                    <label for="userInput" class="f-13">Apartment Number</label>
+                    <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1"
+                        title="(Driver's Licence Number)">
+                </div>
+            </div>
+        </div>
+        <!-- S-7 -->
+        <div class="grid grid-cols-12 gap-1 border-t border-black">
+            <div class="col-span-8 border-e border-black flex flex-col">
+                <label for="userInput" class="f-13">City, Town or Village</label>
+                <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1" title="(Driver's Licence Number)">
+            </div>
+            <div class="col-span-4 flex flex-col">
+                <label for="userInput" class="f-13">Postal Code</label>
+                <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1" title="(Driver's Licence Number)">
+            </div>
+        </div>
+
+        <!-- S-8 -->
+        <div class="border-t border-black">
+            <div class="font-bold f-13">Check below if</div>
+            <div class="grid grid-cols-12 gap-1">
+                <div class="col-span-6 f-13">
+                    <div>
+                        <input type="checkbox"> Vehicle to be registered to 2 individuals
+                    </div>
+                    <div>
+                        <input type="checkbox"> Number plates owned by other than above
+                    </div>
+                    <div>
+                        <input type="checkbox"> Unincorporated company name to be recorded
+                    </div>
+                </div>
+                <div class="col-span-1"> <img src="./arrow.png" alt=""> </div>
+                <div class="col-span-5 f-13">
+                    <div class="font-bold">Complete Supplementary Application</div>
+                    <div class="">Not required if Lease Information is completed on
+                        the New Vehicle Information Statement.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- S-9 -->
+        <div class="f-13 mt-1">There are special declarations for this application. Complete section 5.</div>
+
+        <!-- S-10 -->
+        <div class="bg-[#efefef] f-15 font-bold border-t-2 border-b py-1 border-black">
+            2. Number Plates
+        </div>
+
+        <!-- S-11 -->
+        <div class="grid grid-cols-12">
+            <div class="col-span-6 flex flex-col">
+                <label for="userInput" class="f-13">Enter plate number to be attached</label>
+                <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1" title="(Driver's Licence Number)">
+            </div>
+            <div class="col-span-1 text-lg font-bold flex justify-center items-center">Or</div>
+            <div class="col-span-5">
+                <div>Are new number plates required?</div>
+                <div class="flex">
+                    <div class="me-5">
+                        <input type="checkbox"> Yes
+                    </div>
+                    <div>
+                        <input type="checkbox"> No
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- S-12 -->
+        <div class="border-t border-b border-black">
+            <div class="f-13"><span class="font-bold">Vehicle Class</span> - Check one</div>
+            <div class="grid grid-cols-12 gap-1">
+                <div class="col-span-3 f-13">
+                    <div><input type="checkbox"> Passenger</div>
+                    <div><input type="checkbox"> Moped</div>
+                    <div><input type="checkbox"> Trailer</div>
+                </div>
+                <div class="col-span-3 border-e border-black f-13">
+                    <div><input type="checkbox"> Motorcycle</div>
+                    <div><input type="checkbox"> Off-Road</div>
+                    <div><input type="checkbox"> Motorized Snow</div>
+                </div>
+                <div class="col-span-6 mx-3">
+                    <div class="flex">
+                        <div class="me-5">
+                            <input type="checkbox"> Commercial
+                        </div>
+                        <div>
+                            <input type="checkbox"> Bus
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-12">
+                        <div class="col-span-4 border-s border-e border-b border-black">
+                            <label for="userInput" class="f-13 ms-1">Gross Weight (kg)</label>
+                            <input type="text" name="userInput" class="bg-[#f1f4ff] m-1" style="width: 80%;"
+                                title="Gross Weight (kg)">
+                        </div>
+                        <div class="col-span-4 border-e border-b border-black">
+                            <label for="userInput" class="f-13 ms-1">Number of Axles</label>
+                            <input type="text" name="userInput" style="width: 80%;" class="bg-[#f1f4ff]  m-1"
+                                title="Gross Weight (kg)">
+                        </div>
+                        <div class="col-span-4 border-e border-b border-black">
+                            <label for="userInput" class="f-13 ms-1">Seating Capacity</label>
+                            <input type="text" name="userInput" style="width: 80%;" class="bg-[#f1f4ff] m-1"
+                                title="Gross Weight (kg)">
+                        </div>
+                    </div>
+                    <div class="f-11">If gross weight/seating capacity has changed, complete section 6.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- S-13 -->
+        <div class="grid grid-cols-12">
+            <div class="col-span-4 flex flex-col border-e border-black">
+                <label for="userInput" class="f-13">Odometer (km)</label>
+                <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1" title="Odometer (km)">
+            </div>
+            <div class="col-span-8 flex flex-col">
+                <label for="userInput" class="f-13 ms-1">If returning plates for credit or cancellation, enter plate number</label>
+                <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1">
+            </div>
+        </div>
+
+        <!-- S-14 -->
+        <div class="bg-[#efefef] f-15 font-bold border-t-2 border-b py-1 border-black">
+            3. Vehicle Status
+        </div>
+
+        <!-- S-15 -->
+        <div>
+            <div>Is this vehicle to be registered?</div>
+            <div class="grid grid-cols-12 gap-1">
+                <div class="col-span-2"> <input type="checkbox"> Fit</div>
+                <div class="col-span-2"> <input type="checkbox"> Unfit</div>
+                <div class="col-span-2"> <input type="checkbox"> Temporary</div>
+                <div class="col-span-6"> 
+                    <input type="checkbox"> Other
+                    <input type="text" name="userInput" class="bg-[#f1f4ff] h-full border-b border-black">
+                </div>
+            </div>
+        </div>
+
+        <!-- S-16 -->
+        <div class="flex flex-col border-b border-t border-black mt-1">
+            <label for="userInput" class="f-13">Last Name, First Name and Middle Initial or Company Name</label>
+            <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1" title="(Driver's Licence Number)">
+        </div>
+
+        <div class="grid grid-cols-12 mt-2" style="font-size: 10px;">
+            <div class="col-span-2">SR-LV-006E (2023/04)</div>
+            <div class="col-span-3">© King's Printer for Ontario, 2023</div>
+            <div class="col-span-3">Disponible en français</div>
+            <div class="col-span-4 text-end">Page 1 of 4</div>
+        </div>
+    </form>
+</body>
+
+</html>
