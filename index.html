@@ -7,17 +7,16 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
     <style>
-        body {
-            margin: 0%;
-            padding: 10px;
-        }
-
         @media print {
 
             *,
             body {
                 margin: 0%;
                 padding: 0%;
+            }
+
+            .page-bottom {
+                display: block !important;
             }
 
             .logo-print {
@@ -52,12 +51,39 @@
             .f-13 {
                 font-size: 13px;
             }
+
             .f-12 {
                 font-size: 12px;
             }
+
             .f-11 {
                 font-size: 11px;
             }
+
+            .f-10 {
+                font-size: 10px;
+            }
+
+            .black-line {
+                background-color: black !important;
+                color: white !important;
+                -webkit-print-color-adjust: exact;
+                color-adjust: exact;
+            }
+        }
+
+        body {
+            margin: 0%;
+            padding: 10px;
+        }
+
+        .page-bottom {
+            display: none;
+        }
+
+        .PG-Break {
+            page-break-before: always;
+            /* Ensures a new page starts before each element with class 'chapter-title' */
         }
     </style>
 </head>
@@ -76,7 +102,7 @@
         </div>
     </div>
     <!-- S-2 -->
-    <div class="mt-4">
+    <div class="mt-1">
         <div class="f-15 font-bold">Instructions</div>
         <div class="f-13 mt-2">Please print clearly in ink. Provide insurance information in section 7 if applicable.
             Ensure section 8 is completed and signed.</div>
@@ -249,17 +275,17 @@
                     </div>
                     <div class="grid grid-cols-12">
                         <div class="col-span-4 border-s border-e border-b border-black">
-                            <label for="userInput" class="f-13 ms-1">Gross Weight (kg)</label>
+                            <label for="userInput" class="f-11 ms-1">Gross Weight (kg)</label>
                             <input type="text" name="userInput" class="bg-[#f1f4ff] m-1" style="width: 80%;"
                                 title="Gross Weight (kg)">
                         </div>
                         <div class="col-span-4 border-e border-b border-black">
-                            <label for="userInput" class="f-13 ms-1">Number of Axles</label>
+                            <label for="userInput" class="f-11 ms-1">Number of Axles</label>
                             <input type="text" name="userInput" style="width: 80%;" class="bg-[#f1f4ff]  m-1"
                                 title="Gross Weight (kg)">
                         </div>
                         <div class="col-span-4 border-e border-b border-black">
-                            <label for="userInput" class="f-13 ms-1">Seating Capacity</label>
+                            <label for="userInput" class="f-11 ms-1">Seating Capacity</label>
                             <input type="text" name="userInput" style="width: 80%;" class="bg-[#f1f4ff] m-1"
                                 title="Gross Weight (kg)">
                         </div>
@@ -276,7 +302,8 @@
                 <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1" title="Odometer (km)">
             </div>
             <div class="col-span-8 flex flex-col">
-                <label for="userInput" class="f-13 ms-1">If returning plates for credit or cancellation, enter plate number</label>
+                <label for="userInput" class="f-13 ms-1">If returning plates for credit or cancellation, enter plate
+                    number</label>
                 <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1">
             </div>
         </div>
@@ -293,7 +320,7 @@
                 <div class="col-span-2"> <input type="checkbox"> Fit</div>
                 <div class="col-span-2"> <input type="checkbox"> Unfit</div>
                 <div class="col-span-2"> <input type="checkbox"> Temporary</div>
-                <div class="col-span-6"> 
+                <div class="col-span-6">
                     <input type="checkbox"> Other
                     <input type="text" name="userInput" class="bg-[#f1f4ff] h-full border-b border-black">
                 </div>
@@ -302,16 +329,366 @@
 
         <!-- S-16 -->
         <div class="flex flex-col border-b border-t border-black mt-1">
-            <label for="userInput" class="f-13">Last Name, First Name and Middle Initial or Company Name</label>
+            <label for="userInput" class="f-12">Last Name, First Name and Middle Initial or Company Name</label>
             <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1" title="(Driver's Licence Number)">
         </div>
 
-        <div class="grid grid-cols-12 mt-2" style="font-size: 10px;">
-            <div class="col-span-2">SR-LV-006E (2023/04)</div>
-            <div class="col-span-3">© King's Printer for Ontario, 2023</div>
-            <div class="col-span-3">Disponible en français</div>
-            <div class="col-span-4 text-end">Page 1 of 4</div>
+        <div class="grid grid-cols-12 mt-2 " style="font-size: 8px;">
+            <div class="col-span-2 page-bottom">SR-LV-006E (2023/04)</div>
+            <div class="col-span-3 page-bottom">© King's Printer for Ontario, 2023</div>
+            <div class="col-span-3 page-bottom">Disponible en français</div>
+            <div class="col-span-4 text-end page-bottom">Page 1 of 4</div>
         </div>
+
+
+        <!-- Second Page -->
+        <!-- S-1 -->
+        <div class="bg-[#efefef] f-15 font-bold border-t-2 border-b py-1 border-black PG-Break">
+            4. Application for Replacement
+        </div>
+        <!-- S-2 -->
+        <div>
+            <div class="font-bold f-13">I hereby make application for replacement of:</div>
+            <div class="grid grid-cols-12">
+                <div class="col-span-2 f-12"> <input type="checkbox"> Vehicle Permit</div>
+                <div class="col-span-2 f-12"> <input type="checkbox"> Validation Sticker</div>
+                <div class="col-span-2 f-12"> <input type="checkbox"> Number Plates</div>
+                <div class="col-span-6 f-12">
+                    Reason for Replacement
+                    <input type="text" name="userInput" class="bg-[#f1f4ff] h-full border-b border-black">
+                </div>
+            </div>
+        </div>
+        <!-- S-3 -->
+        <div>
+            <div class="font-bold f-13">Complete if applicable:</div>
+            <div class="grid grid-cols-12 gap-1">
+                <div class="col-span-3 f-12 flex flex-col border-e border-black">
+                    Plate Number
+                    <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1">
+                </div>
+                <div class="col-span-3 f-12 flex flex-col border-e border-black">
+                    Validation Number
+                    <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1">
+                </div>
+                <div class="col-span-6 f-12 flex flex-col">
+                    Vehicle Identification Number
+                    <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1">
+                </div>
+            </div>
+        </div>
+
+        <!-- S-4 -->
+        <div class="f-13 border-t border-black">
+            If at any time I recover the lost item(s), I will forward same to a ServiceOntario Driver and Vehicle
+            Licence Issuing Office.
+        </div>
+
+        <!-- S-5 -->
+        <div class="bg-[#efefef] f-15 font-bold border-t-2 border-b py-1 border-black">
+            5. Declarations
+        </div>
+        <!-- S-6 -->
+        <div class="f-13 font-bold bg-black ps-2 text-white black-line">
+            Registrant
+        </div>
+        <!-- S-7 -->
+        <div class="flex">
+            <div class="me-2">
+                <input type="checkbox">
+            </div>
+            <div class="f-13">
+                <div class="font-bold">NOR Declaration for Northern Ontario resident</div>
+                <div class="">
+                    I hereby declare that the address of my residence is in Northern Ontario meaning that part of
+                    Ontario consisting of the
+                    Territorial District of Algoma, Cochrane, Kenora, Manitoulin, Nipissing, Parry Sound, Rainy River,
+                    Sudbury, Timiskaming or
+                    Thunder Bay and that this vehicle is not owned by a corporation
+                </div>
+            </div>
+        </div>
+        <!-- S-8 -->
+        <div class="f-13 font-bold bg-black ps-2 text-white black-line">
+            Vehicle
+        </div>
+        <!-- S-9 -->
+        <div class="flex  border-b border-black">
+            <div class="me-2">
+                <input type="checkbox">
+            </div>
+            <div class="f-13">
+                <div class="font-bold">PUO Declaration for Commercial Motor Vehicle number plates issued at passenger
+                    car fees</div>
+                <div class="">
+                    I hereby declare that the commercial vehicle for which application for licence plates is being made:
+                    1. is primarily used for
+                    personal transportation; 2. has a registered gross weight of 3000 kg (6615 lbs.) or less.
+                </div>
+            </div>
+        </div>
+        <!-- S-10 -->
+        <div class="font-bold ms-5 f-13">Declaration for Commercial Vehicle Operator Registration (CVOR)</div>
+        <div class="flex">
+            <div class="me-2">
+                <input type="checkbox">
+            </div>
+            <div class="f-13">
+                <div class="">
+                    This Commercial Motor Vehicle is exempt from the requirement of the Highway Traffic Act for a CVOR
+                    certificate.
+                </div>
+            </div>
+        </div>
+        <div class="flex border-b border-black">
+            <div class="me-2">
+                <input type="checkbox">
+            </div>
+            <div class="f-13">
+                <div class="">
+                    This Commercial Motor Vehicle is operated under the authority of another operator’s CVOR number as
+                    provided for in the
+                    <i>Highway Traffic Act</i>.
+                </div>
+                <div class="flex flex-col mb-1">
+                    <label for="userInput" class="f-13">CVOR Number</label>
+                    <input type="text" name="userInput" class="bg-[#f1f4ff] w-full border-b border-black">
+                </div>
+            </div>
+        </div>
+
+        <!-- S-11 -->
+        <div class="flex border-b border-black">
+            <div class="me-2">
+                <input type="checkbox">
+            </div>
+            <div class="f-13">
+                <div class="font-bold">PAR Declaration for a motor vehicle having permanently attached thereto a machine
+                    or apparatus and not used to
+                    carry any other load</div>
+                <div class="">
+                    I hereby declare that the vehicle described on this application has permanently attached thereto a
+                    device and said vehicle will
+                    not be used for conveying any load other than said device.
+                </div>
+                <div class="flex flex-col mb-1">
+                    <label for="userInput" class="f-13">Device</label>
+                    <input type="text" name="userInput" class="bg-[#f1f4ff] w-full border-b border-black">
+                </div>
+            </div>
+        </div>
+        <!-- S-12 -->
+        <div class="flex border-b border-black">
+            <div class="me-2">
+                <input type="checkbox">
+            </div>
+            <div class="f-12 mb-1">
+                <div class="font-bold">SCH Declaration for school bus number plates</div>
+                <div class="">
+                    I hereby declare that the bus for which application for a permit is made: 1. is under contract to a
+                    school board or other
+                    authority for transportation of students to and from school during the months of September through
+                    June, and 2. will not be
+                    operated using an RUO sticker unless it (a) is kept exclusively for school bus use from September to
+                    June and (b) is operated
+                    empty except for the driver/trainee in July and August.
+                </div>
+            </div>
+        </div>
+        <!-- S-13 -->
+        <div class="flex border-b border-black">
+            <div class="me-2">
+                <input type="checkbox">
+            </div>
+            <div class="f-12 mb-1">
+                <div class="font-bold">FRM Declaration for farm truck number plates</div>
+                <div class="">
+                    I declare that I have a farming business within the meaning of the Farm Registration and Farm
+                    Organizations Funding Act,
+                    1993 that: (a) is registered as a farm business; (b) is exempt from the requirement to register as a
+                    farm business based on a
+                    decision from the Agricultural, Food and Rural Affairs Appeal Tribunal; or (c) has been granted a
+                    gross farm income
+                    exemption by the Ministry of Agriculture, Food and Rural Affairs.
+                </div>
+            </div>
+        </div>
+        <!-- S-14 -->
+        <div class="flex border-b border-black">
+            <div class="me-2">
+                <input type="checkbox">
+            </div>
+            <div class="f-12 mb-1">
+                <div class="font-bold">ODO Declaration for Odometer Information</div>
+                <div class="">
+                    I hereby declare that the odometer information provided is true and accurate and that pursuant to
+                    subsection 66(5) of the
+                    <i>Highway Traffic Act,</i> my vehicle is equipped with an odometer that is in good working order
+                    and to my
+                    knowledge has not
+                    been tampered with.
+                </div>
+            </div>
+        </div>
+        <!-- S-14 -->
+        <div class="flex border-b border-black">
+            <div class="me-2">
+                <input type="checkbox">
+            </div>
+            <div class="f-12 mb-1">
+                <div class="font-bold">Declaration of motor assisted bicycle (moped) - Certificate of selling dealer
+                </div>
+                <div class="">
+                    Pursuant to the <i>Highway Traffic Act,</i> I hereby certify that the motor vehicle described on
+                    this application is a motor assisted
+                    bicycle that complies with the definition thereof contained in the Act.
+                </div>
+            </div>
+        </div>
+        <!-- S-15 -->
+        <div class="flex border-b border-black">
+            <div class="me-2">
+                <input type="checkbox">
+            </div>
+            <div class="f-12 mb-1">
+                <div class="font-bold">LSV Declaration for Low Speed Vehicle</div>
+                <div class="">
+                    I hereby declare that the vehicle described on this application is a low speed vehicle that complies
+                    with the definition and
+                    other requirements set out in the pilot regulation under the <i>Highway Traffic Act.</i>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-12 mt-2 " style="font-size: 8px;">
+            <div class="col-span-2 page-bottom">SR-LV-006E (2023/04)</div>
+            <div class="col-span-3 page-bottom"></div>
+            <div class="col-span-3 page-bottom"></div>
+            <div class="col-span-4 text-end page-bottom">Page 2 of 4</div>
+        </div>
+
+
+        <!-- page three -->
+        <!-- S-1 -->
+        <div class="f-13 font-bold bg-black ps-2 text-white black-line PG-Break">
+            Plates
+        </div>
+        <!-- S-2 -->
+        <div class="flex border-b border-black">
+            <div class="me-2">
+                <input type="checkbox">
+            </div>
+            <div class="f-12 mb-1">
+                <div class="font-bold">MDA Declaration for medical practitioner number plates</div>
+                <div class="">
+                    I hereby declare that I am a duly qualified medical practitioner in the province of Ontario.
+                </div>
+            </div>
+        </div>
+        <!-- S-3 -->
+        <div class="flex border-b border-black">
+            <div class="me-2">
+                <input type="checkbox">
+            </div>
+            <div class="f-12 mb-1">
+                <div class="font-bold">HVA Declaration for historic motor vehicle number plates</div>
+                <div class="">
+                    I hereby declare that the vehicle described on this application is: 1. at least 30 years old; 2.
+                    substantially unchanged or
+                    unmodified from the original manufacturer's product. I understand that the vehicle may be operated
+                    on a highway for the
+                    purpose of exhibition, tours or similar function organized by a properly constituted automobile club
+                    or parades, repairs, testing
+                    or demonstrating for sale.
+                </div>
+            </div>
+        </div>
+        <!-- S-4 -->
+        <div class="bg-[#efefef] f-15 font-bold border-t-2 border-b py-1 border-black">
+            6. Change Registered Gross Weight or Seating Capacity
+        </div>
+        <!-- S-5 -->
+        <div class="grid grid-cols-12 gap-1">
+            <div class="col-span-2 f-10 flex flex-col border-e border-black">
+                From Gross Weight (kg)
+                <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1 border-b border-black">
+            </div>
+            <div class="col-span-2 f-10 flex flex-col border-e border-black">
+                To Gross Weight (kg)
+                <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1 border-b border-black">
+            </div>
+            <div class="col-span-3 f-10 flex flex-col border-e border-black">
+                From Seating Capacity
+                <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1 border-b border-black">
+            </div>
+            <div class="col-span-2 f-10 flex flex-col border-e border-black">
+                To Seating Capacity
+                <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1 border-b border-black">
+            </div>
+            <div class="col-span-3 f-10 flex flex-col">
+                Issuer: Insert Time of Day
+                <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1 border-b border-black">
+            </div>
+        </div>
+        <!-- S-6 -->
+        <div class="bg-[#efefef] f-15 font-bold border-t-2 border-b py-1 border-black">
+            7. Certificate of Insurance (The Compulsory Automobile Insurance Act)
+        </div>
+        <div class="flex flex-col border-b border-black">
+            <label for="userInput" class="f-13">I hereby certify that the motor vehicle bearing Vehicle Identification
+                Number (Serial Number)</label>
+            <input type="text" name="userInput" class="bg-[#f1f4ff] w-full">
+        </div>
+
+        <!-- S-7 -->
+        <div class="border-b border-black">
+            <div>is insured under a contract of automobile insurance made with:</div>
+            <div class="grid grid-cols-12 gap-1">
+                <div class="col-span-8 border-e border-black">
+                    <label for="userInput" class="f-13">Name of Insurance Company</label>
+                    <input type="text" name="userInput" class="bg-[#f1f4ff] w-full">
+                </div>
+                <div class="col-span-4">
+                    <label for="userInput" class="f-13">Policy Number</label>
+                    <input type="text" name="userInput" class="bg-[#f1f4ff] w-full">
+                </div>
+            </div>
+        </div>
+
+        <!-- S-8 -->
+        <div class="bg-[#efefef] f-15 font-bold border-t-2 border-b py-1 border-black">
+            8. I hereby certify the information in this application is true
+        </div>
+        <!-- S-9 -->
+        <div class="grid grid-cols-12 gap-1 border-b border-black">
+            <div class="col-span-4 border-e border-black">
+                <label for="userInput" class="f-12">Name (Please Print)</label>
+                <input type="text" name="userInput" class="bg-[#f1f4ff] w-full" style="width: 80%;">
+            </div>
+            <div class="col-span-4 border-e border-black">
+                <label for="userInput" class="f-12">Authorized Signature</label>
+                <input type="text" name="userInput" class="bg-[#f1f4ff] w-full" style="width: 80%;">
+            </div>
+            <div class="col-span-4">
+                <label for="userInput" class="f-12">Date</label>
+                <input type="date" name="userInput" class="bg-[#f1f4ff] w-full f-12">
+            </div>
+        </div>
+
+        <!-- S-10 -->
+        <div class="f-10">Under provincial legislation, the penalty for making a false statement may include a fine
+            and/or imprisonment and/or a driver's licence suspension.</div>
+        <br>
+        <div class="f-10">
+            Information in this form is collected under the authority of the <i>Highway Traffic Act</i>. If you have any
+            questions about the collection and use of your
+            personal information collected on this form, please call the Operations Manager, ServiceOntario at
+            416-235-2999 or 1-800-387-3445 or write to
+            the Supervisor, Ministry of Transportation, Information Services Office – Special Enquiry Unit, 87 Sir
+            William Hearst Ave, Toronto ON M3M 0B4.
+            Direct general inquiries to ServiceOntario 416-235-2999 or 1-800-387-3445 or visit <span class="text-blue-900 underline">ServiceOntario.ca</span>.
+        </div>
+
     </form>
 </body>
 
