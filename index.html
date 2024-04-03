@@ -611,6 +611,14 @@
         </div>
 
     </form>
+    <div class="text-center mt-5">
+        <button id="printButton" class="bg-green-900 text-white rounded p-2 font-bold">Print this page</button>
+    </div>
+    <script>
+        document.getElementById('printButton').addEventListener('click', function () {
+            window.print();
+        });
+    </script>
 </body>
 
 </html>

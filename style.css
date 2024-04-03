@@ -61,6 +61,9 @@
         -webkit-print-color-adjust: exact;
         color-adjust: exact;
     }
+    #printButton {
+        display: none;
+    }
 }
 
 body {

@@ -320,7 +320,7 @@
         </div>
 
         <!-- S-16 -->
-        <div class="font-bold f-13">
+        <div class="font-bold f-13 PG-Break">
             I hereby certify the above information is true.
         </div>
 
@@ -402,12 +402,14 @@
             </div>
         </div>
 
-        <div class="f-10">Under provincial legislation, the penalty for making a false statement may include a fine and/or
+        <div class="f-10">Under provincial legislation, the penalty for making a false statement may include a fine
+            and/or
             imprisonment and/or a driver's licence suspension.</div>
         <br>
         <div class="f-10">
-            Information contained in this form is collected under the authority of section 205 of the <i> Highway Traffic
-            Act </i> and is used for the purpose of
+            Information contained in this form is collected under the authority of section 205 of the <i> Highway
+                Traffic
+                Act </i> and is used for the purpose of
             registering and licensing motor vehicles in the province of Ontario. If you have any questions about the
             collection and use of your personal
             information collected on this form, please call the Operations Manager, ServiceOntario at 1-800-267-8097
@@ -417,6 +419,15 @@
             visit <span class="text-blue-900">ServiceOntario.ca</span>.
         </div>
     </form>
+    <div class="text-center mt-5">
+        <button id="printButton" class="bg-green-900 text-white rounded p-2 font-bold">Print this page</button>
+    </div>
+    <script>
+        document.getElementById('printButton').addEventListener('click', function () {
+            window.print();
+        });
+    </script>
+
 </body>
 
 </html>
