@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- header -->
+    <div class="flex justify-between">
+        <div class="flex">
+            <img src="./logo.png" class="logo-print" alt="">
+            <p class="ms-5 font-bold head-text-1">Ministry of Transportation</p>
+        </div>
+        <div class="flex items-center justify-center">
+            <div class="font-bold head-text-2">
+                Supplementary Application
+            </div>
+        </div>
+    </div>
+    <!-- S-2 -->
+    <div>
+        <div class="f-13 font-bold">Instructions</div>
+        <ul class="f-11 mt-2 list-disc pl-5">
+            <li> <span class="font-bold">Complete Section 1 only -</span> If licence plates are owned by someone other
+                than the vehicle owner.</li>
+            <li> <span class="font-bold">Complete Section 2 only -</span> If vehicle is to be registered to two (2)
+                individuals or two (2) companies.</li>
+            <li> <span class="font-bold">Complete Section 3 only -</span> If an unincorporated company name is required
+                on the permit (i.e. operating as).</li>
+            <li>Print clearly in ink.</li>
+        </ul>
+    </div>
+    <!-- S-3 -->
+    <div class="bg-[#efefef] f-13 font-bold border-t-2 border-b border-black mt-1">
+        1. Licence plate owner information
+    </div>
+    <form action="">
+        <!-- S-4 -->
+        <div class="grid grid-cols-12 gap-1 border-b  border-black">
+            <div class="col-span-5 flex flex-col border-e border-black">
+                <label for="userInput" class="f-11">Registrant Identification Number (Driver's Licence Number)</label>
+                <input type="text" name="userInput" class="bg-[#f1f4ff] m-1 h-full" title="(Driver's Licence Number)">
+            </div>
+            <div class="col-span-3">
+                <div class="font-bold f-11">New Plate Registrants only</div>
+                <div class="grid grid-cols-12 gap-2">
+                    <div class="col-span-3 flex flex-col border-e border-black">
+                        <label for="userInput" class="f-13">Sex</label>
+                        <input type="text" name="userInput" class="bg-[#f1f4ff] m-1 h-full me-4"
+                            title="(Driver's Licence Number)">
+                    </div>
+                    <div class="col-span-9 flex flex-col">
+                        <label for="userInput" class="f-11">Date of Birth</label>
+                        <input type="date" name="userInput" class="bg-[#f1f4ff] m-1 h-full f-11">
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-4 border-s border-black f-10">
+                <div class="grid grid-cols-12 gap-1">
+                    <div class="col-span-6 ms-1">
+                        <div class="font-bold">Office Use Only</div>
+                        <div class="flex flex-col">
+                            <label for="userInput" class="f-11">Registrant Type</label>
+                            <input type="text" name="userInput"
+                                class="bg-[#f1f4ff] m-1 h-full f-13 border-b border-black">
+                        </div>
+                    </div>
+                    <div class="col-span-6">
+                        <ul class="f-11 mt-2 list-disc pl-5">
+                            <li>Individual</li>
+                            <li>Company</li>
+                            <li>Joint</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- S-5 -->
+        <div class="flex flex-col border-b border-black">
+            <label for="userInput" class="f-11">Last Name, First Name and Middle Initial or Company Name</label>
+            <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1">
+        </div>
+
+        <!-- S-6 -->
+        <div>
+            <div class="grid grid-cols-12 gap-1">
+                <div class="col-span-8 border-e border-black flex flex-col">
+                    <label for="userInput" class="Small-text">Street Number and Name or Lot, Concession and
+                        Township</label>
+                    <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1"
+                        title="(Driver's Licence Number)">
+                </div>
+                <div class="col-span-4 flex flex-col">
+                    <label for="userInput" class="f-11">Apartment Number</label>
+                    <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1"
+                        title="(Driver's Licence Number)">
+                </div>
+            </div>
+        </div>
+        <!-- S-7 -->
+        <div class="grid grid-cols-12 gap-1 border-t border-black">
+            <div class="col-span-8 border-e border-black flex flex-col">
+                <label for="userInput" class="f-11">City, Town or Village</label>
+                <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1" title="(Driver's Licence Number)">
+            </div>
+            <div class="col-span-4 flex flex-col">
+                <label for="userInput" class="f-11">Postal Code</label>
+                <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1" title="(Driver's Licence Number)">
+            </div>
+        </div>
+        <!-- S-8 -->
+        <div class="border-t border-black">
+            <div class="f-13"> <span class="font-bold">Mailing Address</span> (Complete below only if mailing address is
+                different from above)</div>
+            <div class="grid grid-cols-12 gap-1">
+                <div class="col-span-8 border-e border-black flex flex-col">
+                    <label for="userInput" class="f-11">Street Number and Name or Lot, Concession and Township</label>
+                    <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1">
+                </div>
+                <div class="col-span-4 flex flex-col">
+                    <label for="userInput" class="f-11">Apartment Number</label>
+                    <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1">
+                </div>
+            </div>
+        </div>
+        <!-- S-7 -->
+        <div class="grid grid-cols-12 gap-1 border-t border-black">
+            <div class="col-span-8 border-e border-black flex flex-col">
+                <label for="userInput" class="f-11">City, Town or Village</label>
+                <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1" title="(Driver's Licence Number)">
+            </div>
+            <div class="col-span-4 flex flex-col">
+                <label for="userInput" class="f-11">Postal Code</label>
+                <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1" title="(Driver's Licence Number)">
+            </div>
+        </div>
+
+        <!-- S-8 -->
+        <div class="border-t border-b border-black font-bold f-13">
+            I hereby certify the above information is true.
+        </div>
+
+        <!-- S-9 -->
+        <div class="grid grid-cols-12 gap-1 border-b-2 border-black">
+            <div class="col-span-4 border-e border-black flex flex-col">
+                <label for="userInput" class="f-11">Name (Please Print)</label>
+                <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1">
+            </div>
+            <div class="col-span-4 flex flex-col border-e border-black">
+                <label for="userInput" class="f-11">Authorized Signature</label>
+            </div>
+            <div class="col-span-4 flex flex-col">
+                <label for="userInput" class="f-11">Date (yyyy/mm/dd)</label>
+                <input type="date" name="userInput" class="bg-[#f1f4ff] h-full m-1 f-11">
+            </div>
+        </div>
+
+        <!-- S-10 -->
+        <div class="f-10 mt-1 ">Under provincial legislation, the penalty for making a false statement may include a
+            fine and/or imprisonment and/or a driver's licence suspension.</div>
+
+        <!-- S-11 -->
+        <div class="bg-[#efefef] f-15 font-bold border-t border-b border-black">
+            2. Registration of two(2) individuals or two(2) companies
+        </div>
+        <!-- S-12 -->
+        <div class="f-12"><span class="font-bold">First member</span> of the registration information</div>
+        <div class="grid grid-cols-12 gap-1 border-b  border-black">
+            <div class="col-span-5 flex flex-col border-e border-black">
+                <label for="userInput" class="f-11">Registrant Identification Number (Driver's Licence Number)</label>
+                <input type="text" name="userInput" class="bg-[#f1f4ff] m-1 h-full" title="(Driver's Licence Number)">
+            </div>
+            <div class="col-span-3">
+                <div class="font-bold f-11">New Plate Registrants only</div>
+                <div class="grid grid-cols-12 gap-2">
+                    <div class="col-span-3 flex flex-col border-e border-black">
+                        <label for="userInput" class="f-13">Sex</label>
+                        <input type="text" name="userInput" class="bg-[#f1f4ff] m-1 h-full me-4"
+                            title="(Driver's Licence Number)">
+                    </div>
+                    <div class="col-span-9 flex flex-col">
+                        <label for="userInput" class="f-11">Date of Birth</label>
+                        <input type="date" name="userInput" class="bg-[#f1f4ff] m-1 h-full f-11">
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-4 border-s border-black f-10">
+                <div class="grid grid-cols-12 gap-1">
+                    <div class="col-span-6 ms-1">
+                        <div class="font-bold">Office Use Only</div>
+                        <div class="flex flex-col">
+                            <label for="userInput" class="f-11">Registrant Type</label>
+                            <input type="text" name="userInput"
+                                class="bg-[#f1f4ff] m-1 h-full f-13 border-b border-black">
+                        </div>
+                    </div>
+                    <div class="col-span-6">
+                        <ul class="f-11 mt-2 list-disc pl-5">
+                            <li>Individual</li>
+                            <li>Company</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- S-13 -->
+        <div class="flex flex-col border-b border-black">
+            <label for="userInput" class="f-11">Last Name, First Name and Middle Initial or Company Name</label>
+            <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1">
+        </div>
+
+        <!-- S-14 -->
+        <div>
+            <div class="grid grid-cols-12 gap-1">
+                <div class="col-span-8 border-e border-black flex flex-col">
+                    <label for="userInput" class="Small-text">Street Number and Name or Lot, Concession and
+                        Township</label>
+                    <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1">
+                </div>
+                <div class="col-span-4 flex flex-col">
+                    <label for="userInput" class="f-11">Apartment Number</label>
+                    <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1"
+                        title="(Driver's Licence Number)">
+                </div>
+            </div>
+        </div>
+        <!-- S-15 -->
+        <div class="grid grid-cols-12 gap-1 border-t border-b border-black">
+            <div class="col-span-8 border-e border-black flex flex-col">
+                <label for="userInput" class="f-11">City, Town or Village</label>
+                <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1" title="(Driver's Licence Number)">
+            </div>
+            <div class="col-span-4 flex flex-col">
+                <label for="userInput" class="f-11">Postal Code</label>
+                <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1" title="(Driver's Licence Number)">
+            </div>
+        </div>
+
+        <!-- S-16 -->
+        <div class="f-12"><span class="font-bold">First member</span> of the registration information</div>
+        <div class="grid grid-cols-12 gap-1 border-b  border-black">
+            <div class="col-span-5 flex flex-col border-e border-black">
+                <label for="userInput" class="f-11">Registrant Identification Number (Driver's Licence Number)</label>
+                <input type="text" name="userInput" class="bg-[#f1f4ff] m-1 h-full" title="(Driver's Licence Number)">
+            </div>
+            <div class="col-span-3">
+                <div class="font-bold f-11">New Plate Registrants only</div>
+                <div class="grid grid-cols-12 gap-2">
+                    <div class="col-span-3 flex flex-col border-e border-black">
+                        <label for="userInput" class="f-13">Sex</label>
+                        <input type="text" name="userInput" class="bg-[#f1f4ff] m-1 h-full me-4"
+                            title="(Driver's Licence Number)">
+                    </div>
+                    <div class="col-span-9 flex flex-col">
+                        <label for="userInput" class="f-11">Date of Birth</label>
+                        <input type="date" name="userInput" class="bg-[#f1f4ff] m-1 h-full f-11">
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-4 border-s border-black f-10">
+                <div class="grid grid-cols-12 gap-1">
+                    <div class="col-span-6 ms-1">
+                        <div class="font-bold">Office Use Only</div>
+                        <div class="flex flex-col">
+                            <label for="userInput" class="f-11">Registrant Type</label>
+                            <input type="text" name="userInput"
+                                class="bg-[#f1f4ff] m-1 h-full f-13 border-b border-black">
+                        </div>
+                    </div>
+                    <div class="col-span-6">
+                        <ul class="f-11 mt-2 list-disc pl-5">
+                            <li>Individual</li>
+                            <li>Company</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- S-13 -->
+        <div class="flex flex-col border-b border-black">
+            <label for="userInput" class="f-11">Last Name, First Name and Middle Initial or Company Name</label>
+            <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1" title="(Driver's Licence Number)">
+        </div>
+
+        <!-- S-14 -->
+        <div>
+            <div class="grid grid-cols-12 gap-1">
+                <div class="col-span-8 border-e border-black flex flex-col">
+                    <label for="userInput" class="Small-text">Street Number and Name or Lot, Concession and
+                        Township</label>
+                    <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1"
+                        title="(Driver's Licence Number)">
+                </div>
+                <div class="col-span-4 flex flex-col">
+                    <label for="userInput" class="f-11">Apartment Number</label>
+                    <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1"
+                        title="(Driver's Licence Number)">
+                </div>
+            </div>
+        </div>
+        <!-- S-15 -->
+        <div class="grid grid-cols-12 gap-1 border-t border-black">
+            <div class="col-span-8 border-e border-black flex flex-col">
+                <label for="userInput" class="f-11">City, Town or Village</label>
+                <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1" title="(Driver's Licence Number)">
+            </div>
+            <div class="col-span-4 flex flex-col">
+                <label for="userInput" class="f-11">Postal Code</label>
+                <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1" title="(Driver's Licence Number)">
+            </div>
+        </div>
+
+        <!-- S-16 -->
+        <div class="font-bold f-13">
+            I hereby certify the above information is true.
+        </div>
+
+        <!-- S-17 -->
+        <div class="grid grid-cols-12 gap-1 border-b border-t border-black">
+            <div class="col-span-4 border-e border-black flex flex-col">
+                <label for="userInput" class="f-11">Name (Please Print)</label>
+                <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1">
+            </div>
+            <div class="col-span-4 flex flex-col border-e border-black">
+                <label for="userInput" class="f-11">Authorized Signature</label>
+            </div>
+            <div class="col-span-4 flex flex-col">
+                <label for="userInput" class="f-11">Date (yyyy/mm/dd)</label>
+                <input type="date" name="userInput" class="bg-[#f1f4ff] h-full m-1 f-11">
+            </div>
+        </div>
+        <!-- S-18 -->
+        <div class="grid grid-cols-12 gap-1 border-b border-t border-black">
+            <div class="col-span-4 border-e border-black flex flex-col">
+                <label for="userInput" class="f-11">Name (Please Print)</label>
+                <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1">
+            </div>
+            <div class="col-span-4 flex flex-col border-e border-black">
+                <label for="userInput" class="f-11">Authorized Signature</label>
+            </div>
+            <div class="col-span-4 flex flex-col">
+                <label for="userInput" class="f-11">Date (yyyy/mm/dd)</label>
+                <input type="date" name="userInput" class="bg-[#f1f4ff] h-full m-1 f-11">
+            </div>
+        </div>
+
+        <!-- S-19 -->
+        <div class="f-10 mt-1 ">Under provincial legislation, the penalty for making a false statement may include a
+            fine and/or imprisonment and/or a driver's licence suspension.</div>
+
+        <!-- S-11 -->
+        <div class="bg-[#efefef] f-15 font-bold border-t border-b border-black">
+            3. Unincorporated company name (i.e. operating as) information
+        </div>
+
+        <!-- S-12 -->
+        <div class="flex flex-col border-b border-black">
+            <label for="userInput" class="f-11">Name of unincorporated company</label>
+            <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1">
+        </div>
+
+        <!-- S-16 -->
+        <div class="font-bold f-13">
+            I hereby certify the above information is true.
+        </div>
+
+        <!-- S-17 -->
+        <div class="grid grid-cols-12 gap-1 border-b border-t border-black">
+            <div class="col-span-4 border-e border-black flex flex-col">
+                <label for="userInput" class="f-11">Name (Please Print)</label>
+                <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1">
+            </div>
+            <div class="col-span-4 flex flex-col border-e border-black">
+                <label for="userInput" class="f-11">Authorized Signature</label>
+            </div>
+            <div class="col-span-4 flex flex-col">
+                <label for="userInput" class="f-11">Date (yyyy/mm/dd)</label>
+                <input type="date" name="userInput" class="bg-[#f1f4ff] h-full m-1 f-11">
+            </div>
+        </div>
+        <!-- S-18 -->
+        <div class="grid grid-cols-12 gap-1 border-b border-t border-black">
+            <div class="col-span-4 border-e border-black flex flex-col">
+                <label for="userInput" class="f-11">Name (Please Print)</label>
+                <input type="text" name="userInput" class="bg-[#f1f4ff] h-full m-1">
+            </div>
+            <div class="col-span-4 flex flex-col border-e border-black">
+                <label for="userInput" class="f-11">Authorized Signature</label>
+            </div>
+            <div class="col-span-4 flex flex-col">
+                <label for="userInput" class="f-11">Date (yyyy/mm/dd)</label>
+                <input type="date" name="userInput" class="bg-[#f1f4ff] h-full m-1 f-11">
+            </div>
+        </div>
+
+        <div class="f-10">Under provincial legislation, the penalty for making a false statement may include a fine and/or
+            imprisonment and/or a driver's licence suspension.</div>
+        <br>
+        <div class="f-10">
+            Information contained in this form is collected under the authority of section 205 of the <i> Highway Traffic
+            Act </i> and is used for the purpose of
+            registering and licensing motor vehicles in the province of Ontario. If you have any questions about the
+            collection and use of your personal
+            information collected on this form, please call the Operations Manager, ServiceOntario at 1-800-267-8097
+            (TTY 1-800-268-7095) or write to the
+            Supervisor, Ministry of Transportation, Information Services Office – Special Enquiry Unit, 87 Sir William
+            Hearst Ave, Toronto ON M3M 0B4 or
+            visit <span class="text-blue-900">ServiceOntario.ca</span>.
+        </div>
+    </form>
+</body>
+
+</html>
