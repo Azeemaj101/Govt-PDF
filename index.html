@@ -23,13 +23,13 @@
         </div>
     </div>
     <!-- S-2 -->
-    <div class="mt-1">
+    <div style="margin-top: 38px;">
         <div class="f-15 font-bold">Instructions</div>
-        <div class="f-13 mt-2">Please print clearly in ink. Provide insurance information in section 7 if applicable.
+        <div class="f-12 mt-2">Please print clearly in ink. Provide insurance information in section 7 if applicable.
             Ensure section 8 is completed and signed.</div>
     </div>
     <!-- S-3 -->
-    <div class="bg-[#efefef] f-15 font-bold border-t-2 border-b py-1 border-black mt-4">
+    <div class="bg-[#efefef] f-15 font-bold border-t-2 border-b py-1 border-black mt-4 gray-line">
         1. Registrant
     </div>
     <form action="">
@@ -44,13 +44,11 @@
                 <div class="grid grid-cols-12 gap-2">
                     <div class="col-span-4 flex flex-col border-e border-black">
                         <label for="userInput" class="f-13">Sex</label>
-                        <input type="text" name="userInput" class="bg-[#f1f4ff] m-1 h-full me-4"
-                            title="(Driver's Licence Number)">
+                        <input type="text" name="userInput" class="bg-[#f1f4ff] m-1 h-full me-4">
                     </div>
                     <div class="col-span-8 flex flex-col">
-                        <label for="userInput" class="f-13">Date of Birth</label>
-                        <input type="date" name="userInput" class="bg-[#f1f4ff] m-1 h-full f-13"
-                            title="(Driver's Licence Number)">
+                        <label for="userInput" class="f-13">Date of Birth <span class="f-10">(yyyy/mm/dd)</span></label>
+                        <input type="text" name="userInput" class="bg-[#f1f4ff] m-1 h-full f-13">
                     </div>
                 </div>
             </div>
@@ -92,7 +90,7 @@
         </div>
         <!-- S-8 -->
         <div class="border-t border-black">
-            <div class="f-13"> <span class="font-bold">Mailing Address</span> (Complete below only if mailing address is
+            <div class="f-14"> <span class="font-bold">Mailing Address</span> (Complete below only if mailing address is
                 different from above)</div>
             <div class="grid grid-cols-12 gap-1">
                 <div class="col-span-8 border-e border-black flex flex-col">
@@ -147,7 +145,7 @@
         <div class="f-13 mt-1">There are special declarations for this application. Complete section 5.</div>
 
         <!-- S-10 -->
-        <div class="bg-[#efefef] f-15 font-bold border-t-2 border-b py-1 border-black">
+        <div class="bg-[#efefef] f-15 font-bold border-t-2 border-b py-1 border-black  gray-line">
             2. Number Plates
         </div>
 
@@ -230,7 +228,7 @@
         </div>
 
         <!-- S-14 -->
-        <div class="bg-[#efefef] f-15 font-bold border-t-2 border-b py-1 border-black">
+        <div class="bg-[#efefef] f-15 font-bold border-t-2 border-b py-1 border-black gray-line">
             3. Vehicle Status
         </div>
 
@@ -264,7 +262,7 @@
 
         <!-- Second Page -->
         <!-- S-1 -->
-        <div class="bg-[#efefef] f-15 font-bold border-t-2 border-b py-1 border-black PG-Break">
+        <div class="bg-[#efefef] f-15 font-bold border-t-2 border-b py-1 border-black PG-Break gray-line">
             4. Application for Replacement
         </div>
         <!-- S-2 -->
@@ -306,7 +304,7 @@
         </div>
 
         <!-- S-5 -->
-        <div class="bg-[#efefef] f-15 font-bold border-t-2 border-b py-1 border-black">
+        <div class="bg-[#efefef] f-15 font-bold border-t border-b py-1 border-black gray-line">
             5. Declarations
         </div>
         <!-- S-6 -->
@@ -525,7 +523,7 @@
             </div>
         </div>
         <!-- S-4 -->
-        <div class="bg-[#efefef] f-15 font-bold border-t-2 border-b py-1 border-black">
+        <div class="bg-[#efefef] f-15 font-bold border-t-2 border-b py-1 border-black gray-line">
             6. Change Registered Gross Weight or Seating Capacity
         </div>
         <!-- S-5 -->
@@ -552,7 +550,7 @@
             </div>
         </div>
         <!-- S-6 -->
-        <div class="bg-[#efefef] f-15 font-bold border-t-2 border-b py-1 border-black">
+        <div class="bg-[#efefef] f-15 font-bold border-t-2 border-b py-1 border-black gray-line">
             7. Certificate of Insurance (The Compulsory Automobile Insurance Act)
         </div>
         <div class="flex flex-col border-b border-black">
@@ -563,11 +561,11 @@
 
         <!-- S-7 -->
         <div class="border-b border-black">
-            <div>is insured under a contract of automobile insurance made with:</div>
+            <div class="f-13">is insured under a contract of automobile insurance made with:</div>
             <div class="grid grid-cols-12 gap-1">
                 <div class="col-span-8 border-e border-black">
                     <label for="userInput" class="f-13">Name of Insurance Company</label>
-                    <input type="text" name="userInput" class="bg-[#f1f4ff] w-full">
+                    <input type="text" name="userInput" class="bg-[#f1f4ff] w-full" style="width: 99%;">
                 </div>
                 <div class="col-span-4">
                     <label for="userInput" class="f-13">Policy Number</label>
@@ -577,22 +575,22 @@
         </div>
 
         <!-- S-8 -->
-        <div class="bg-[#efefef] f-15 font-bold border-t-2 border-b py-1 border-black">
+        <div class="bg-[#efefef] f-15 font-bold border-t-2 border-b py-1 border-black gray-line">
             8. I hereby certify the information in this application is true
         </div>
         <!-- S-9 -->
         <div class="grid grid-cols-12 gap-1 border-b border-black">
             <div class="col-span-4 border-e border-black">
                 <label for="userInput" class="f-12">Name (Please Print)</label>
-                <input type="text" name="userInput" class="bg-[#f1f4ff] w-full m-1" style="width: 80%;">
+                <input type="text" name="userInput" class="bg-[#f1f4ff] w-full m-1" style="width: 90%;">
             </div>
             <div class="col-span-4 border-e border-black">
                 <label for="userInput" class="f-12">Authorized Signature</label>
-                <input type="text" name="userInput" class="bg-[#f1f4ff] w-full m-1" style="width: 80%;">
+                <input type="text" name="userInput" class="bg-[#f1f4ff] w-full m-1" style="width: 90%;">
             </div>
             <div class="col-span-4">
-                <label for="userInput" class="f-12">Date</label>
-                <input type="date" name="userInput" class="bg-[#f1f4ff] w-full m-1 f-12">
+                <label for="userInput" class="f-12">Date <span class="f-10">(yyyy/mm/dd)</span></label>
+                <input type="text" name="userInput" class="bg-[#f1f4ff] w-full m-1" style="width: 90%;">
             </div>
         </div>
 

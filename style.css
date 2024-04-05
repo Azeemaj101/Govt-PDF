@@ -42,6 +42,9 @@
     .f-13 {
         font-size: 13px;
     }
+    .f-14 {
+        font-size: 14px;
+    }
 
     .f-12 {
         font-size: 12px;
@@ -61,8 +64,24 @@
         -webkit-print-color-adjust: exact;
         color-adjust: exact;
     }
+    .gray-line {
+        background-color: #efefef !important;
+        color: black !important;
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+    }
+    input {
+        background-color: #f1f4ff !important;
+        color: black !important;
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+    }
     #printButton {
         display: none;
+    }
+    @page {
+        margin: 2%;
+        -webkit-print-color-adjust: exact;
     }
 }
 
