@@ -64,7 +64,7 @@
         -webkit-print-color-adjust: exact;
         color-adjust: exact;
     }
-    .gray-line {
+    .gray-line,.bg-color {
         background-color: #efefef !important;
         color: black !important;
         -webkit-print-color-adjust: exact;
@@ -80,7 +80,7 @@
         display: none;
     }
     @page {
-        margin: 2%;
+        margin: 3%;
         -webkit-print-color-adjust: exact;
     }
 }
